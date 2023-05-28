@@ -1,0 +1,17 @@
+#服务器端口配置
+server:
+  port: 8080
+
+#spring相关配置
+spring:
+  #druid-spring-boot-starter相关配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+#mybatis相关配置
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath:mbg/mapper/*
