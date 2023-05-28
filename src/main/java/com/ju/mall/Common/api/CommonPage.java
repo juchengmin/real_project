@@ -38,6 +38,7 @@ public class CommonPage<T>{
 
     public static<T> CommonPage<T> restPage(List<T> data){
         CommonPage<T> commonPage = new CommonPage<>();
+        //从list中获取分页信息
         PageInfo<T> pageInfo = new PageInfo<>(data);
         commonPage.setPageNum(pageInfo.getPageNum());
         commonPage.setPageSize(pageInfo.getPageSize());
