@@ -52,6 +52,11 @@
 			<optional>true</optional>
 		</dependency>
 		<!--集成其他组件-->
+		<!--redis依赖配置-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
 		<!--MyBatis分页插件-->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
@@ -87,7 +92,6 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.7.0</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
