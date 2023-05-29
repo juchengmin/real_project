@@ -9,6 +9,19 @@ spring:
     url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: root
+  #热部署
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+    freemarker:
+      cache: false    #页面不加载缓存，修改即时生效
+#日志打印
+logging:
+  level:
+    #sql日志打印
+    com.ju.mall.mbg.mapper: debug
 
 #mybatis相关配置
 mybatis:

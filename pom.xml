@@ -44,6 +44,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--用于热部署-->
+		<!-- <optional> 标签用于指定依赖项的可选性。当一个依赖项被标记为可选时，它将不会强制传递给项目的依赖树中的其他模块 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<!--集成其他组件-->
 		<!--MyBatis分页插件-->
 		<dependency>
