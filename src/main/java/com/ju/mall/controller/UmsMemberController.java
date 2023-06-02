@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Api(tags = "UmsMemberComtroller",description = "会员登录注册管理")
 @Controller
 @RequestMapping("/sso")
-public class UmsMemberComtroller {
+public class UmsMemberController {
 
     @Autowired
     private UmsMemberService umsMemberService;

@@ -37,6 +37,11 @@ spring:
         enabled: true #启用Elasticsearch存储库
       cluster-name: elasticsearch # es的连接地址及端口号
       cluster-nodes: 127.0.0.1:9300 # es集群的名称
+    #mongdb相关配置
+    mongodb:
+      host: localhost # mongodb的连接地址
+      port: 27017 # mongodb的连接端口号
+      database: mall-port # mongodb的连接的数据库
 #日志打印
 logging:
   level:
