@@ -5,6 +5,7 @@ import com.ju.mall.dto.UmsAdminLoginParam;
 import com.ju.mall.mbg.model.UmsAdmin;
 import com.ju.mall.mbg.model.UmsPermission;
 import com.ju.mall.service.UmsAdminService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,6 +27,7 @@ import java.util.Map;
  * @version: 1.0
  */
 @Controller
+@Api(tags = "UmsAdminController", description = "后台用户管理")
 @RequestMapping("/admin")
 public class UmsController {
 

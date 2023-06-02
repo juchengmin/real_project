@@ -91,6 +91,8 @@ public class SpringScurity extends WebSecurityConfigurerAdapter {
                 //用户登录和注册放开
                 .antMatchers("/admin/login", "/admin/register")
                 .permitAll()
+                .antMatchers("/esProduct/**")// 搜索模块暂时运行匿名访问
+                .permitAll()
                 //跨域请求会先经过一次OPTIONS请求
                 //OPTIONS 请求通常用于跨域资源共享（CORS）中的预检请求。在进行跨域请求时，浏览器会首先发送一个 OPTIONS 请求，以确定实际请求是否安全和允许访问。
                 //服务器在响应 OPTIONS 请求时，会返回包含允许的请求方法、请求标头和其他支持的选项的响应头。
